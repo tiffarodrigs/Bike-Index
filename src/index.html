@@ -1,5 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head></head>
-  <body></body>
+  <body>
+    <div class="container">
+      <label for="location">location</label>
+      <input id="location" type="text">
+      <label> Date since</label>
+      <input id="dateSince" type="date">
+      <button class="btn btn-darK" id="find-bikes">Find Stolen Bikes</button>
+
+      <div class="row">
+        <div class="col-4">
+          <h1 class="heading-1">Results</h1>
+          <div id="bike-output"></div>
+          <div id="error"></div>
+        </div>
+        <div class="col-8">
+          <h1 class="heading-1">Statistics</h1>
+          <h3 class="heading-3">By Model</h3>
+          <p id="model-count"></p>
+
+          <h3 class="heading-3">By City</h3>
+          <div id="bikes-by-city"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
